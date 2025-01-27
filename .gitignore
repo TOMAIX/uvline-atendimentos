@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+.DS_Store
+
+# Environment
+.env
+
+# Credentials
+backend/uvline-atendimentos-*.json
+
+# Uploads
+backend/uploads/
