@@ -1,3 +1,4 @@
+// AudioRecorder.jsx
 import { useState, useRef, useEffect } from 'react'
 import { Mic, Square, Send } from 'lucide-react'
 
@@ -126,7 +127,9 @@ function AudioRecorder({ selectedStore }) {
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">Gravador de Atendimento</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        Clique no botão para iniciar a gravação
+      </h2>
       
       {error && (
         <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-md">
@@ -185,11 +188,7 @@ function AudioRecorder({ selectedStore }) {
           <p className="text-green-500 font-medium">
             Áudio pronto para envio
           </p>
-        ) : (
-          <p className="text-gray-500">
-            Clique no botão para iniciar a gravação
-          </p>
-        )}
+        ) : null}
       </div>
     </div>
   )
