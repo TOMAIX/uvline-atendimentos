@@ -104,7 +104,7 @@ function AudioRecorder({ selectedStore }) {
       formData.append('audio', audioBlob, 'recording.webm')
       formData.append('store', selectedStore)
 
-      const response = await fetch('http://localhost:3000/upload', {
+      const response = await fetch('https://uvline-atendimentos-backend.onrender.com/upload', {
         method: 'POST',
         body: formData
       })
